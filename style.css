@@ -215,6 +215,10 @@ a {
   letter-spacing: -0.5px;
   line-height: 20px;
 }
+.contents .curriculum .program .program-list .program-card .program-tit .check-img {
+  width: 37px;
+  height: 37px;
+}
 .contents .curriculum .program .program-list .program-card .program-card__desc {
   font-size: 13px;
   line-height: 20px;
@@ -274,4 +278,8 @@ footer .foot-tit {
   font-size: 24px;
   display: flex;
   gap: 8px;
+}
+footer .foot-tit .adress {
+  width: 19px;
+  height: 25px;
 }

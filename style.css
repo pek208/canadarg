@@ -2,9 +2,9 @@
   color: #111;
   font-size: 16px;
   font-family: "NanumSquareNeo", Arial, Helvetica, sans-serif;
-  --red: #FF2627;
+  --red: #ff6302;
   --red-gradation:linear-gradient(270deg, #FF9AA1 0%, #F92728 102.64%);
-  --lightred: #FFF2F2;
+  --lightred: #fff3e7;
   --white: #ffffff;
   --container_width-01: 1400px;
   --container_width-02: 1100px;
@@ -79,80 +79,68 @@ a {
   width: var(--container_width-02);
   margin: auto;
   padding-top: var(--contents-space80);
-  color: var(--white);
   display: flex;
   flex-direction: column;
-  gap: var(--contents-space10);
 }
 .top-visual .title h1 span {
+  font-family: "NanumSquareNeoExtraBold";
+}
+.top-visual .title p {
+  font-size: 15px;
+  line-height: 24px;
   font-family: "NanumSquareNeoBold";
+  margin: 20px 0 33px 0;
 }
-
-.contents {
-  width: var(--container_width-02);
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: var(--contents-space80);
-}
-.contents .address {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: var(--contents-space40);
-}
-.contents .address .address-text {
-  display: flex;
-  flex-direction: column;
-  gap: var(--contents-space10);
-}
-.contents .address .address-text .title {
-  display: flex;
-  gap: var(--contents-space10);
-}
-.contents .address .address-text .title img {
-  width: 18.074px;
-  height: 24px;
-}
-.contents .address .address-text .title h1 {
-  color: var(--gray01, #111);
-  font-family: "NanumSquareNeoBold";
-  font-size: 24px;
-  letter-spacing: -1.2px;
-}
-.contents .address .canada-btn {
+.top-visual .title .canada-btn {
   text-align: left;
-  width: 226px;
+  width: 197px;
   padding: 20px;
   flex-shrink: 0;
   border-radius: var(--contents-space10);
-  background: var(--red, #F92728);
+  background: #F92728;
   border: none;
 }
-.contents .address .canada-btn a {
+.top-visual .title .canada-btn a {
   display: flex;
   justify-content: space-between;
 }
-.contents .address .canada-btn a .text {
+.top-visual .title .canada-btn a .text {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.contents .address .canada-btn a .text p {
+.top-visual .title .canada-btn a .text span {
   color: var(--white, #FFF);
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: -0.9px;
 }
-.contents .address .canada-btn a .text p .bold {
+.top-visual .title .canada-btn a .text span .bold {
   font-family: "NanumSquareNeoExtraBold";
 }
-.contents .spot-group {
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0;
+}
+.contents .canadian-campus {
+  width: var(--container_width-02);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contents .canadian-campus .address {
+  font-size: 24px;
+  font-family: "NanumSquareNeoExtraBold";
+  margin-bottom: 27px;
+}
+.contents .canadian-campus .spot-group {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--contents-space10);
 }
-.contents .spot-group .spot {
+.contents .canadian-campus .spot-group .spot {
   background-color: var(--lightred);
   padding: 20px;
   display: flex;
@@ -160,18 +148,18 @@ a {
   gap: 7px;
   border-radius: 10px;
 }
-.contents .spot-group .spot .title {
+.contents .canadian-campus .spot-group .spot .title {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
 }
-.contents .spot-group .spot .title h3 {
+.contents .canadian-campus .spot-group .spot .title h3 {
   font-family: "NanumSquareNeoBold";
 }
-.contents .spot-group .spot p {
+.contents .canadian-campus .spot-group .spot p {
   font-size: 12px;
 }
-.contents .spot-group .recruiting {
+.contents .canadian-campus .spot-group .recruiting {
   border-radius: var(--contents-space10);
   border: 1px solid var(--red);
   background: var(--white, #FFF);
@@ -182,61 +170,61 @@ a {
   align-items: center;
   gap: var(--contents-space10);
 }
-.contents .spot-group .recruiting img {
+.contents .canadian-campus .spot-group .recruiting img {
   width: 25px;
   height: 25px;
 }
-.contents .introduction {
+.contents .curriculum {
+  width: var(--container_width-01);
+  border-radius: 40px;
+  margin: auto;
+  background-color: #fccc52;
+  padding: var(--contents-space40) 0;
+}
+.contents .curriculum .program {
+  width: var(--container_width-02);
+  margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 80px;
 }
-.contents .introduction .title {
-  padding-bottom: var(--contents-space10);
-  line-height: 140%;
+.contents .curriculum .program .title {
+  padding-bottom: 38px;
 }
-.contents .introduction p {
-  line-height: 160%;
+.contents .curriculum .program .title h1 {
+  line-height: 60px;
 }
-.contents .introduction p span {
-  color: var(--red);
-  font-weight: bold;
-}
-.contents .introduction .text-group2 {
+.contents .curriculum .program .program-list {
   display: grid;
-  grid-template-columns: 330px 1fr;
-  gap: var(--contents-space40);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
-.contents .introduction .text-group2 .title-group {
+.contents .curriculum .program .program-list .program-card {
   display: flex;
   flex-direction: column;
-  gap: var(--contents-space10);
+  gap: 5px;
 }
-.contents .introduction .text-group2 .title-group h2 {
-  line-height: 150%;
-}
-.contents .introduction .text-group2 .title-group h4 {
-  line-height: 150%;
-}
-.contents .introduction .text-group2 .num-group {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: var(--contents-space10);
-}
-.contents .introduction .text-group2 .num-group .num {
+.contents .curriculum .program .program-list .program-card .program-tit {
+  border-radius: 8px;
   display: flex;
-  flex-direction: column;
-  gap: var(--contents-space10);
-  padding-bottom: var(--contents-space40);
+  align-items: center;
+  gap: 5px;
+  background-color: #feefcb;
+  padding: 10px 8px;
+  font-size: 13px;
+  font-family: "NanumSquareNeoBold";
+  letter-spacing: -0.5px;
+  line-height: 20px;
 }
-.contents .introduction .text-group2 .num-group .num:last-child {
-  border-bottom: none;
-}
-.contents .introduction .text-group2 .num-group .num:first-child {
-  padding-top: 0;
+.contents .curriculum .program .program-list .program-card .program-card__desc {
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "NanumSquareNeo";
+  margin: 8px 0;
 }
 .contents .affiliation {
   margin-bottom: 100px;
+  margin: auto;
+  width: var(--container_width-02);
 }
 .contents .affiliation h1 {
   margin-bottom: var(--contents-space20);
@@ -275,10 +263,15 @@ a {
 }
 
 footer {
-  width: 100%;
+  width: var(--container_width-02);
+  margin: auto;
   display: flex;
-  padding: 30px 0;
-  justify-content: center;
-  font-size: 12px;
-  background-color: #f1f1f1;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 50px;
+}
+footer .foot-tit {
+  font-size: 24px;
+  display: flex;
+  gap: 8px;
 }

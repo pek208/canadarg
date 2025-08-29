@@ -14,14 +14,11 @@
   --contents-space80:80px;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
-}
-
 html,
 body {
   padding: 0;
   margin: 0;
+  min-width: 1400px;
 }
 
 a {

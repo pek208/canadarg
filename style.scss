@@ -14,12 +14,12 @@
     --contents-space80:80px;
 }
 
+html { -webkit-text-size-adjust: 100%; }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); 
 }
 
 
